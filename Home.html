@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <link rel="icon" href="img37.jpg" type="image">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <style>
+   body {font-family: "Recoleta-Medium"}
+ * {box-sizing: border-box;}
+
+.header {
+text-align: center;
+  color: #4B4746;
+  overflow: hidden;
+  background-color: white ;
+padding: 15px 15px 0px 15px;
+
+font-family: "Courier", Times, serif;
+}
+
+.header a {
+  color: #4B4746;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 2px;
+  font-weight: bold;
+  }
+  .header a:hover {
+  color:#52A4BB;
+  }
+  
+.header a.active {
+
+  color: #52A4BB;
+}
+
+.explorer{
+width:100%!important;
+}
+
+
+  .mySlides {
+  display: none;
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  }
+  
+ #xx{
+  background-image: url("img7.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  }
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.footer {
+ 
+  background-color:#A8E6D7 ;
+padding: 20px 10px ;
+bottom: 0;
+
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 3px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+	}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-linkedin {
+  background: #125688;
+  color: white;
+}	
+@media (min-width: 900px) and (max-width: 1199px) {
+  .home-images img{
+  height: 300px!important;
+}
+}
+ @media (max-width: 900px) {
+ .navbar-toggler-icon i{
+     font-size: 30px;
+    width: 35px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 10px;
+    padding:0px;
+    cursor: pointer; 
+  }
+  .navbar-toggler-icon a{
+    position: relative;
+    bottom: 5px;
+  }
+  .f-image{
+    width: 20%!important;
+  }
+   .f-image1{
+  margin-top: 10px!important;
+}
+.home-images h1{
+  font-size: 24px!important;
+}
+.home-images p{
+  margin-bottom:0px!important;
+}
+.home-images , .home-images img{
+  height: 237px!important;
+}
+}
+ @media (max-width: 767px) {
+   .mySlides img{
+    height: 350px!important;
+   }
+   .container, .container-sm{
+    max-width: 620px!important;
+   }
+   .home-images p{
+  font-size: 17px!important;
+}
+
+}
+@media (max-width: 480px){
+.mySlides img {
+    height: 230px!important;
+}
+.header2 a {
+    padding: 7px;
+    font-size: 15px;
+    display: block;
+}
+.home-images{
+  width: 328px!important;
+    margin: 0 auto!important;
+    padding: 0px!important;
+}
+.explorer{
+width: auto!important;
+}
+}
+   </style>
+   </head>
+<body>
+      <nav id="top-header" class="navbar navbar-expand-lg py-4 d-lg-none ">
+  <div class="container-fluid">
+           <span class="navbar-toggler-icon d-inline" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"  aria-label="Toggle navigation"><a class=" d-inline">Menu</a><i class=" fa fa-bars d-inline"></i></span> 
+    <div class="collapse navbar-collapse " id="navbarResponsive">
+      <ul class="navbar-nav ml-auto pt-3">
+        <li class="nav-item">
+          <a class="nav-link" href="Home.html">Home  </a></li>
+
+        <li class="nav-item "><a class="nav-link" href="About Us.html" >About Us</a></li>
+
+        <li class="nav-item active"><a class="nav-link" href="Products.html">Products</a></li>
+
+        <li class="nav-item"><a class="nav-link" href="Services.html">Services</a></li>
+
+        <li class="nav-item"><a class="nav-link " href="Contact.html">Contact Us </a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="mySlides w3-display-container w3-center">
+    <img src="img2.jpg" style="width:100%; height:500px;">
+   
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="img5.jpg" style="width:100%; height:500px;">
+    
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="img4.jpg" style="width:100%; height:500px;">
+  </div>
+  <div class="container-fluid d-none d-lg-block">
+<div class="header">
+
+    <a class="active" href="Home.html">Home</a>
+    <a href="About Us.html">About Us</a>
+	<a href="Products.html">Products</a>
+	<a href="Services.html">Services</a>
+<a href="Contact.html">Contact Us</a>
+  </div>
+</div>
+<hr class="d-none d-lg-block">
+<div class="container" id="kk">
+<h1 style=" color:#52A4BB; font-size:30px; font-weight: bold; float: left; padding: 50px 0px 0px 10px; ">Apogee Textiles</h1>
+<p style="float: left; padding: 50px 0px 0px 0px; ">APOGEE Textiles is a a US-based, full service textile sourcing company that specializes in connecting
+clients with quality, cost competitive, and reputable factories. Our extensive network of suppliers allows
+us  to accommodate any Textile clothing or accessories line. We offers high-performance flat linen for
+hotel, hospitality and health-care industries in addition to High End Home Textiles, Furnishing fabrics 
+and Apparels for all age groups. We are one stop solution for all of your textile related sourcing needs.
+<br>
+<br>  
+Our products are designed for longevity. By using excellent yarns and fabrics, we address all corners of
+your life style with our supreme quality cotton molded into your desired products. 
+<br>
+<br>
+Our  <span style="color:#52A4BB"><u>corporate culture</u></span>  is based on fairness and openness in our relations with our customers and
+partners, something which always leads to long-term and very reliable relationships. 
+<br>
+<br>
+For us,  <span style="color:#52A4BB"><u>sustainability</u></span>  is not a “megatrend”, but deeply rooted in our DNA. At Apogee we work as a team
+and are committed along the entire  <span style="color:#52A4BB"><u>value chain</u></span>  to respecting values and assuming responsibility as a
+good corporate citizen. 
+<br>
+	 <br>
+	 <br>
+	 </p>
+     </div>
+	 
+   <div class="container">
+  <div class="row explorer">
+      <div class="col-sm-4 col-xs-12 home-images">
+	  <img src="img211.jpg"  width="100%" >
+	
+	  </div>
+    <div class="col-sm-4 col-xs-12 text-center home-images" id="xx" >
+	<br>
+	<br class="d-none d-lg-block">
+	<br class="d-none d-lg-block">
+	<a href="Institutional Linen.html" style="font-size:30px; font-weight:bold; color: black;">Institutional Linen</a>
+	<br>
+	<br>
+	<p style=" font-size:20px;">Hotel Linen</p>
+	<p style=" font-size:20px;">Hospital Linen</p>
+	<p style=" font-size:20px;">Kitchen Linen</p>
+	</div>
+	
+    <div class="col-sm-4 col-xs-12 home-images">
+	<img src="img311.jpg"  width="100%" >
+	
+	</div>
+	</div>
+	</div>
+	<br>
+	<br>
+	<div class="container" id="group">
+  <div class="row explorer" >
+<div class="col-sm-4 col-xs-12 text-center home-images" id="xx" >
+	<br>
+	<br class="d-none d-lg-block">
+	
+	<a href="Home Textiles.html" style="font-size:30px; font-weight:bold; color: black;">Home Textiles</a>
+	<br>
+	<br>
+	<p style=" font-size:20px;">Quilts</p>
+	<p style=" font-size:20px;">Duvets</p>
+	<p style=" font-size:20px;">Pillows</p>
+	<p style=" font-size:20px;">Bed Sheets</p>
+	  </div>
+	
+    <div class="col-sm-4 col-xs-12 home-images" >
+<img src="img411.jpg"   width="100%" >
+	</div>
+    <div class="col-sm-4 col-xs-12 text-center home-images" id="xx" >
+	<br class="d-none d-lg-block">
+	<br class="d-none d-lg-block">
+	<br>
+	<a href="Services.html" style="font-size:30px; font-weight:bold; color: black;">Services</a>
+	<br>
+	<br>
+	<p style=" font-size:20px;">Quality Management</p>
+	<p style=" font-size:20px;">Online Reporting system</p>
+	<p style=" font-size:20px;">Research and Developnment</p>
+	</div>
+	</div>
+	</div>
+ <br>
+ <br>
+<div class="container" id="group">
+  <div class="row explorer">
+      <div class="col-sm-4 col-xs-12 home-images">
+	  <img src="img511.jpg"  width="100%" >
+	
+	  </div>
+    <div class="col-sm-4 col-xs-12 text-center home-images" id="xx" >
+	<br>
+	<br class="d-none d-lg-block">
+	
+	<a href="Garments.html" style="font-size:30px; font-weight:bold; color: black;">Garments</a>
+	<br>
+	<br>
+	<p style=" font-size:20px;">Knitwear</p>
+	<p style=" font-size:20px;">Denim</p>
+	<p style=" font-size:20px;">Workwear</p>
+	<p style=" font-size:20px;">Professional Garments</p>
+	</div>
+    <div class="col-sm-4 col-xs-12 home-images" >
+	<img src="img611.jpg"  width="100%" >
+	
+	</div>
+	</div>
+	</div>
+	<div class="container">
+<hr color="#52A4BB" size="1px">
+
+	<br>
+	<br>
+
+	<div class="text-center">
+	<h1 style="color:#E17B45; font-size:30px;">Certifications</h1>
+	 <hr color="#52A4BB" size="1px">
+	</div>
+	</div>
+	<br>
+	<br>
+	<div class="container">
+  <div class="row">
+   <div class="col-lg-8 col-md-12 text-left">
+   <img class="f-image1" src="img23.jpg" style="width:100%; margin-top:90px;">
+     </div>
+   <div class="col-lg-4 col-md-12 text-left">
+   <img class="f-image" src="img14.jpg" style="width:50%;">   
+ <hr color="#52A4BB" size="1px">
+ <p style="color:#52A4BB;">
+ <span style="font-size: 20px; font-weight:bold;">
+Apogee Supply Co.
+</span>
+<br>
+Ph: +1 (512) 565 1230 / +1 (737) 781 5593
+<br>
+Mail: info@apogeesupply.us
+<br>
+PO Box 7705
+<br>
+Round Rock TX 78683, USA
+</p>
+<hr color="#52A4BB" size="1px">
+ </div>
+ </div>
+ </div>
+ <br>
+ <br>
+ <div class="footer text-center">
+ <a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-linkedin"></a>
+
+<hr color="black">
+<p align="center">Copyright © Apogee Supply Co. All Rights Reserved. </p>
+
+</div>
+   <script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000);    
+}
+
+</script>
+</body>
+</html>

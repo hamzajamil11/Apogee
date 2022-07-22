@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Thank You</title>
+    <link rel="icon" href="img37.jpg" type="image">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <style>
+   body {font-family: "Recoleta-Medium"}
+ * {box-sizing: border-box;}
+
+.header {
+text-align: center;
+  color: #4B4746;
+  overflow: hidden;
+  background-color: white ;
+padding: 15px 15px 0px 15px;
+
+font-family: "Courier", Times, serif;
+}
+
+.header a {
+  color: #4B4746;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 2px;
+  font-weight: bold;
+  }
+  .header a:hover {
+  color:#52A4BB;
+  }
+  
+.header a.active {
+
+  color: #52A4BB;
+
+}
+  .mySlides {
+  display: none;
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  }
+  
+
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.footer {
+ 
+  background-color:#A8E6D7 ;
+padding: 20px 10px ;
+bottom: 0;
+
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 3px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-linkedin {
+  background: #125688;
+  color: white;
+}
+@media (max-width: 900px) {
+ .navbar-toggler-icon i{
+     font-size: 30px;
+    width: 35px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 10px;
+    padding:0px;
+    cursor: pointer; 
+  }
+  .navbar-toggler-icon a{
+    position: relative;
+    bottom: 5px;
+  }
+  .f-image{
+    width: 20%!important;
+  }
+   .f-image1{
+  margin-top: 10px!important;
+}
+}
+ @media (max-width: 767px) {
+   .mySlides img{
+    height: 350px!important;
+   }
+   .container, .container-sm{
+    max-width: 620px!important;
+   }
+  }
+@media (max-width: 480px){
+.mySlides img {
+    height: 230px!important;
+}
+
+}
+   </style>
+   </head>
+<body>
+
+
+<?php
+        $name=$_POST['name'];
+        $visitor_email=$_POST['email'];
+        $message=$_POST['message'];
+
+        $email_from='info@apogeesupply.us';
+        $email_subject="New Form Submition";
+        $email_body="User Name: $name.\n".
+              "User email: $visitor_email.\n".
+                  "User message: $message.\n"; 
+
+
+        $to="info@apogeesupply.us";
+        $headers="From: $email_from \r\n";
+		$headers.="Reply-To: $visitor_email \r\n";
+		mail($to,$email_subject,$email_body,$headers);
+		header("Location: contact.html");
+?>
+ <nav id="top-header" class="navbar navbar-expand-lg py-4 d-lg-none ">
+  <div class="container-fluid">
+           <span class="navbar-toggler-icon d-inline" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"  aria-label="Toggle navigation"><a class=" d-inline">Menu</a><i class=" fa fa-bars d-inline"></i></span> 
+    <div class="collapse navbar-collapse " id="navbarResponsive">
+      <ul class="navbar-nav ml-auto pt-3">
+        <li class="nav-item">
+          <a class="nav-link" href="Home.html">Home  </a></li>
+
+        <li class="nav-item "><a class="nav-link" href="About Us.html" >About Us</a></li>
+
+        <li class="nav-item active"><a class="nav-link" href="Products.html">Products</a></li>
+
+        <li class="nav-item"><a class="nav-link" href="Services.html">Services</a></li>
+
+        <li class="nav-item"><a class="nav-link " href="Contact.html">Contact Us </a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="mySlides w3-display-container w3-center">
+    <img src="img2.jpg" style="width:100%; height:500px;">
+   
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="img5.jpg" style="width:100%; height:500px;">
+    
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="img4.jpg" style="width:100%; height:500px;">
+  </div>
+ <div class="container-fluid d-none d-lg-block">
+<div class="header">
+
+    <a href="Home.html">Home</a>
+    <a href="About Us.html">About Us</a>
+	<a href="Products.html">Products</a>
+	<a href="Services.html">Services</a>
+<a class="active" href="Contact.html">Contact Us</a>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<div class="container py-5">
+  <div class="text-center pt-3 pb-5">
+  	<h3 class="py-3" style="color:#E17B45;">Your response has been submitted.</h3>
+  <h1 style="color:#52A4BB;"> Thank you for contacting us.</h1>
+  </div>
+</div>
+	<br>
+
+ <br>
+ <div class="footer text-center">
+ <a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-linkedin"></a>
+
+<hr color="black">
+<p align="center">Copyright © Apogee Supply. All Rights Reserved. </p>
+
+</div>
+
+
+     <script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000);    
+}
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Products</title>
+    <link rel="icon" href="img37.jpg" type="image">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <style>
+ body {font-family: "Recoleta-Medium"}
+ * {box-sizing: border-box;}
+
+.header {
+text-align: center;
+  color: #4B4746;
+  overflow: hidden;
+  background-color: white ;
+padding: 15px 15px 10px 15px;
+font-family: "Courier", Times, serif;
+}
+
+.header a {
+  color: #4B4746;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 2px;
+  font-weight: bold;
+  }
+  .header a:hover {
+  color:#52A4BB;
+  }
+  
+.header a.active {
+
+  color: #52A4BB;
+
+}
+.mySlides {
+  display: none;
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  }
+.header2 {
+text-align: center;
+  color: #3B3D40;
+  background-color: #CEDCF1 ;
+padding: 10px 0px 10px 0px;
+
+font-family: "Book Antiqua";
+}
+
+.header2 a {
+  color: #3B3D40;
+  padding: 20px;
+    text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  }
+   .header2 a:hover {
+  color:#225D8C;
+  }
+
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+  .header2 a.active {
+
+  color: #225D8C;
+
+}
+.footer {
+ 
+  background-color:#A8E6D7 ;
+padding: 20px 10px ;
+bottom: 0;
+
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 3px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-linkedin {
+  background: #125688;
+  color: white;
+}
+ #xx{
+  background-color: #CEDCF1;
+padding:10px;
+  margin:10px 0;
+  }
+  #yy{
+  margin:0px;
+  padding:10px;
+  }
+  @media (max-width: 900px) {
+ .navbar-toggler-icon i{
+     font-size: 30px;
+    width: 35px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 10px;
+    padding:0px;
+    cursor: pointer; 
+  }
+  .navbar-toggler-icon a{
+    position: relative;
+    bottom: 5px;
+  }
+  .f-image{
+    width: 20%!important;
+  }
+   .f-image1{
+  margin-top: 10px!important;
+}
+}
+ @media (max-width: 767px) {
+   .mySlides img{
+    height: 350px!important;
+   }
+  }
+@media (max-width: 480px){
+.mySlides img {
+    height: 230px!important;
+}
+.header2 a {
+    padding: 7px;
+    font-size: 15px;
+    display: block;
+}
+}
+ </style>
+  </head>
+<body>
+    <nav id="top-header" class="navbar navbar-expand-lg py-4 d-lg-none ">
+  <div class="container-fluid">
+           <span class="navbar-toggler-icon d-inline" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"  aria-label="Toggle navigation"><a class=" d-inline">Menu</a><i class=" fa fa-bars d-inline"></i></span> 
+    <div class="collapse navbar-collapse " id="navbarResponsive">
+      <ul class="navbar-nav ml-auto pt-3">
+        <li class="nav-item">
+          <a class="nav-link" href="Home.html">Home  </a></li>
+
+        <li class="nav-item "><a class="nav-link" href="About Us.html" >About Us</a></li>
+
+        <li class="nav-item active"><a class="nav-link" href="Products.html">Products</a></li>
+
+        <li class="nav-item"><a class="nav-link" href="Services.html">Services</a></li>
+
+        <li class="nav-item"><a class="nav-link " href="Contact.html">Contact Us </a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="mySlides w3-display-container w3-center">
+    <img src="img2.jpg" style="width:100%; height:500px;">
+   
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="img5.jpg" style="width:100%; height:500px;">
+    
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="img4.jpg" style="width:100%; height:500px;">
+  </div>
+<div class="container-fluid d-none d-lg-block">
+<div class="header">
+
+    <a href="Home.html">Home</a>
+	<a href="About Us.html">About Us</a>
+    <a class="active" href="Products.html">Products</a>
+	<a href="Services.html">Services</a>
+<a href="Contact.html">Contact Us</a>
+  </div>
+</div>
+<div class="container-fluid">
+<div class="header2">
+<a href="Institutional Linen.html">Institutional Linen</a>
+    <a href="Professional Clothing.html">Professional Clothing</a>
+	<a class="active"  href="Home Textiles.html">Home Textiles</a>
+    <a href="Garments.html">Garments</a>
+  </div>
+</div>
+<div class="container">
+<br>
+<br>
+<br class="d-none d-lg-block">
+<br class="d-none d-lg-block">
+<h1 style=" color:#52A4BB; font-weight:bold; font-size:25px; ">Home Textiles</h1>
+<br>
+<p>We ensure affordable quality is brought to the client through continuous innovation enhanced by expertise in the textile industry resulting in the vast assortment of bedlinen and accessories seen in Retailers worldwide.
+</p>
+<br>
+<br>
+<div class="row" >
+<div class="col-sm-4 col-xs-12" id="yy">
+<img src="img28.jpg" style="width:100%">
+<div class="text-center rounded mb-0" id="xx">
+BED COVERS
+</div>
+</div>
+<div class="col-sm-4 col-xs-12" id="yy">
+<img src="img29.jpg" style="width:100%">
+<div class="text-center rounded mb-0" id="xx">
+QUILT COVER SETS
+</div>
+</div>
+<div class="col-sm-4 col-xs-12" id="yy">
+<img src="img30.jpg" style="width:100%">
+<div class="text-center rounded mb-0" id="xx">
+CURTAINS
+</div>
+</div>
+</div>
+
+<br>
+<div class="row">
+<div class="col-sm-4 col-xs-12" id="yy">
+<img src="img31.jpg" style="width:100%">
+<div class="text-center rounded mb-0" id="xx">
+BED SKIRTS
+</div>
+</div>
+<div class="col-sm-4 col-xs-12" id="yy">
+<img src="img32.jpg" style="width:100%">
+<div class="text-center rounded mb-0" id="xx">
+SHEET SETS
+</div>
+</div>
+<div class="col-sm-4 col-xs-12" id="yy">
+<img src="img33.jpg" style="width:100%">
+<div class="text-center rounded mb-0" id="xx">
+NURSING GOWNS 
+</div>  
+</div>
+</div>
+
+<br>
+
+</div>
+<div class="container">
+<hr color="#52A4BB" size="1px">
+</div>
+
+<br>
+	<div class="container text-center">
+	<h1 style="color:#E17B45; font-size:30px;">Certifications</h1>
+<hr color="#52A4BB" size="1px">
+	</div>
+	</div>
+	<br>
+	<br>
+	<div class="container">
+  <div class="row">
+   <div class="col-lg-8 col-md-12 text-left">
+   <img class="f-image1" src="img23.jpg" style="width:100%; margin-top:90px;">
+     </div>
+   <div class="col-lg-4 col-md-12 text-left">
+   <img class="f-image" src="img14.jpg" style="width:50%; align:right;">   
+ <hr color="#52A4BB" size="1px">
+ <p style="color:#52A4BB;">
+ <span style="font-size: 20px; font-weight:bold;">
+Apogee Supply Co.
+</span>
+<br>
+Ph: +1 (512) 565 1230 / +1 (737) 781 5593
+<br>
+Mail: info@apogeesupply.us
+<br>
+PO Box 7705
+<br>
+Round Rock TX 78683, USA
+</p>
+<hr color="#52A4BB" size="1px">
+ </div>
+ </div>
+ </div>
+ <br>
+ <br>
+ <div class="footer text-center">
+ <a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-linkedin"></a>
+
+<hr color="black">
+<p align="center">Copyright © Apogee Supply Co. All Rights Reserved. </p>
+
+</div>
+
+
+     <script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000);    
+}
+</script>
+</body>
+</html>
